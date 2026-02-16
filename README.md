@@ -1,34 +1,54 @@
 # ✨ SmartBookmark
 
-SmartBookmark is a modern bookmark manager built with **Next.js (App Router)**, **Supabase**, and **Tailwind CSS**.
+SmartBookmark is a real-time bookmark manager built with **Next.js (App Router)**, **Supabase**, and **Tailwind CSS**.
 
-It provides secure Google login, private bookmarks, real-time updates, and a premium glass UI.
+It features secure Google login, private user data, and instant UI updates across tabs/devices with a premium glass UI.
 
 ---
 
 ## 🚀 Features
 
-- 🔐 Google OAuth Authentication (Supabase Auth)
-- 🔒 Private user bookmarks (Row Level Security)
-- ➕ Add bookmarks (URL + Title)
-- ❌ Delete bookmarks
-- ⭐ Mark bookmarks as Important
-- ⚡ Real-time updates across tabs/devices
+- 🔐 Google OAuth (Supabase Auth)
+- 🔒 Private bookmarks (Row Level Security)
+- ➕ Add & ❌ Delete bookmarks
+- ⭐ Mark as Important (Pinned to top)
+- ⚡ Real-time updates (Supabase Realtime)
 - 🎨 Ultra-premium glassmorphism UI
 - ☁️ Deployed on Vercel
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Stack
 
-- **Framework:** Next.js (App Router)
-- **Backend:** Supabase
-- **Database:** Supabase Postgres
-- **Realtime:** Supabase Realtime
-- **Auth:** Supabase Auth + Google
-- **Styling:** Tailwind CSS
-- **Deployment:** Vercel
+Next.js • Supabase • Postgres • Realtime • Tailwind • Vercel
 
 ---
 
+## ⚔️ Challenges & Solutions
+
+**Problem:** Bookmarks not updating in real time  
+**Solution:** Implemented Supabase Realtime subscriptions and direct state updates.
+
+**Problem:** Insert/Delete queries failing  
+**Solution:** Fixed Supabase Row Level Security (RLS) policies using `auth.uid()`.
+
+**Problem:** Delete felt slow  
+**Solution:** Used optimistic UI updates for instant feedback.
+
+**Problem:** Secrets risk in GitHub  
+**Solution:** Added `.env.local` to `.gitignore` and created `.env.example`.
+
+---
+
+## 🔐 Security
+
+Supabase Row Level Security ensures users only access their own bookmarks.
+
+---
+
+## 🌐 Deployment
+
+Hosted on Vercel.
+
+---
 
