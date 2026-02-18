@@ -13,7 +13,6 @@ It features secure Google login, private user data, and instant UI updates acros
 - ➕ Add & ❌ Delete bookmarks
 - ⭐ Mark as Important (Pinned to top)
 - ⚡ Real-time updates (Supabase Realtime)
-- 🎨 Ultra-premium glassmorphism UI
 - ☁️ Deployed on Vercel
 
 ---
